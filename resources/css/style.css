@@ -467,6 +467,29 @@ header img {
 
 /* 3D visualising */
 
+.dVisualising .leftBottom {
+    background-image: url(/resources/svgs/3dVisualising/3dVisualisingLeftBottom.svg);
+}
+
+.dVisualising .rightBottom {
+    color: white;
+    text-align: center;
+    background-image: url(/resources/svgs/3dVisualising/3dVisualisingRightBottom.svg);
+}
+
+.dVisualising .rightBottom {
+    justify-content: end;
+}
+
+.dVisualising .rightBottom h3 {
+    color: #cc99cc;
+}
+
+.dVisualising .rightBottom a:hover {
+    opacity: 1;
+    color: #cc99cc;
+}
+
 /* Projecting */
 
 /* Footer */
