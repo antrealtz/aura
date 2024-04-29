@@ -532,3 +532,17 @@ footer .logo {
 footer .logo img {
     height: 73px;
 }
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: white;
+}
+
+footer .flex-row {
+    column-gap: 1rem;
+}
