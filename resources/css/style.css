@@ -1,8 +1,32 @@
 @font-face {
-    font-family: 'Roboto';
-    src: local("Roboto"), local("Roboto-Regular"),
-    url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-family: 'Montserrat';
+    src: local("Monserrat"), local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype");
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local("Monserrat"), local("Montserrat-Medium"),
+    url("../fonts/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local("Monserrat"), local("Montserrat-Bold"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local("Monserrat"), local("Montserrat-ExtraBold"),
+    url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -14,32 +38,80 @@ html {
     width: 100%;
 }
 
+body {
+    margin: 0;
+}
+
+a {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation */
+
 nav {
     height: 80px;
     justify-content: center;
     align-items: center;
     list-style: none;
+    column-gap: 4rem;
+}
+
+nav li {
+    width: 240px;
 }
 
 a {
+    justify-content: center;
     color: white;
     text-decoration: none;
+    gap: 1rem;
+}
+
+a svg {
+    fill: white;
+}
+
+.icon-home {
+    height: 2rem;
+    width: 2rem;
+    fill: white;
 }
 
 a:hover {
+    font-weight: 700;
     color: yellow;
+    fill: yellow;
 }
+
+img:hover {
+    fill: yellow;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 0px;
+}
+
+.logo img {
+    height: 127px;
+}
+
+
+/* Variables */
 
 .flex-col {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
 }
 
 .flex-row {
     display: flex;
     flex-direction: row;
-    column-gap: 1rem;
 }
 
 
