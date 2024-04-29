@@ -123,9 +123,16 @@ a svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 88px 0px;
+    padding: 56px 0px;
 }
 
 .logo img {
     height: 127px;
+}
+
+
+/* Header */
+
+header img {
+    width: 100%;
 }
