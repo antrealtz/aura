@@ -392,6 +392,29 @@ header img {
 
 /* Logo design */
 
+.logoDesign .leftBottom {
+    background-image: url(/resources/svgs/logoDesign/logoDesignLeftBottom.svg);
+}
+
+.logoDesign .rightBottom {
+    color: white;
+    text-align: center;
+    background-image: url(/resources/svgs/logoDesign/logoDesignRightBottom.svg);
+}
+
+.logoDesign .rightBottom {
+    justify-content: start;
+}
+
+.logoDesign .rightBottom h3 {
+    color: #cc99ff;
+}
+
+.logoDesign .rightBottom a:hover {
+    opacity: 1;
+    color: #cc99ff;
+}
+
 /* Rebranding */
 
 /* 3D modelling */
