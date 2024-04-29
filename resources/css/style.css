@@ -417,6 +417,29 @@ header img {
 
 /* Rebranding */
 
+.rebranding .leftBottom {
+    background-image: url(/resources/svgs/rebranding/rebrandingLeftBottom.svg);
+}
+
+.rebranding .rightBottom {
+    color: white;
+    text-align: center;
+    background-image: url(/resources/svgs/rebranding/rebrandingRightBottom.svg);
+}
+
+.rebranding .rightBottom {
+    justify-content: end;
+}
+
+.rebranding .rightBottom h3 {
+    color: #99ff99;
+}
+
+.rebranding .rightBottom a:hover {
+    opacity: 1;
+    color: #99ff99;
+}
+
 /* 3D modelling */
 
 /* 3D visualising */
