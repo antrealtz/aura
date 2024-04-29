@@ -367,6 +367,29 @@ header img {
 
 /* Branding */
 
+.branding .leftBottom {
+    background-image: url(/resources/svgs/branding/brandingLeftBottom.svg);
+}
+
+.branding .rightBottom {
+    color: white;
+    text-align: center;
+    background-image: url(/resources/svgs/branding/brandingRightBottom.svg);
+}
+
+.branding .rightBottom {
+    justify-content: end;
+}
+
+.branding .rightBottom h3 {
+    color: #ff9933;
+}
+
+.branding .rightBottom a:hover {
+    opacity: 1;
+    color: #ff9933;
+}
+
 /* Logo design */
 
 /* Rebranding */
