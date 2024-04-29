@@ -492,4 +492,27 @@ header img {
 
 /* Projecting */
 
+.projecting .leftBottom {
+    background-image: url(/resources/svgs/projecting/projectingLeftBottom.svg);
+}
+
+.projecting .rightBottom {
+    color: white;
+    text-align: center;
+    background-image: url(/resources/svgs/projecting/projectingRightBottom.svg);
+}
+
+.projecting .rightBottom {
+    justify-content: start;
+}
+
+.projecting .rightBottom h3 {
+    color: #ffcc99;
+}
+
+.projecting .rightBottom a:hover {
+    opacity: 1;
+    color: #ffcc99;
+}
+
 /* Footer */
