@@ -302,6 +302,10 @@ header img {
     background-image: url(/resources/svgs/videos/videosRightBottom.svg);
 }
 
+.videos .rightBottom {
+    justify-content: start;
+}
+
 .videos .rightBottom h3 {
     color: #91c9ff;
 }
@@ -337,6 +341,29 @@ header img {
 }
 
 /* Graphic design */
+
+.graphicDesign .leftBottom {
+    background-image: url(/resources/svgs/graphicDesign/graphicDesignLeftBottom.svg);
+}
+
+.graphicDesign .rightBottom {
+    color: white;
+    text-align: center;
+    background-image: url(/resources/svgs/graphicDesign/graphicDesignRightBottom.svg);
+}
+
+.graphicDesign .rightBottom {
+    justify-content: start;
+}
+
+.graphicDesign .rightBottom h3 {
+    color: #99cccc;
+}
+
+.graphicDesign .rightBottom a:hover {
+    opacity: 1;
+    color: #99cccc;
+}
 
 /* Branding */
 
