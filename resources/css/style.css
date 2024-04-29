@@ -78,9 +78,136 @@ a {
 }
 
 
+/* Block */
+
+.block {
+    column-gap: 2rem;
+}
+
+
 .color-bg-primary {
     background-color: #333333;
 }
+
+.left {
+    width: 40%;
+}
+
+.leftUp {
+    width: 100%;
+    height: 465px;
+    overflow: hidden;
+}
+
+.leftUp div {
+    width: 100%;
+}
+
+.leftUp img {
+    display: block;
+    height: 100%;
+}
+
+.leftBottom {
+    width: 100%;
+    height: 538px;
+}
+
+.leftBottom div p {
+    width: auto;
+    padding: 42px 42px 164px 82px;
+}
+
+.right {
+    width: 60%;
+    height: fit-content;
+}
+
+.right a {
+    font-size: 1.2rem;
+}
+
+.rightBottom .content {
+    min-width: 279px;
+    min-height: 298px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 61px 529px 100% 182px;
+}
+
+.rightBottom a:hover {
+    cursor: pointer;
+    font-weight: 700;
+    opacity: .6;
+}
+
+.socials {
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Socials */
+
+.vk {
+    background-image: url(/resources/svgs/_social/vk.svg);
+}
+
+.vk:hover {
+    background-image: url(/resources/svgs/_social/vkHover.svg);
+}
+
+.tele {
+    background-image: url(/resources/svgs/_social/tele.svg);
+}
+
+.tele:hover {
+    background-image: url(/resources/svgs/_social/teleHover.svg);
+}
+
+.viber {
+    background-image: url(/resources/svgs/_social/viber.svg);
+}
+
+.viber:hover {
+    background-image: url(/resources/svgs/_social/viberHover.svg);
+}
+
+.whatsup {
+    background-image: url(/resources/svgs/_social/whatsup.svg);
+}
+
+.whatsup:hover {
+    background-image: url(/resources/svgs/_social/whatsupHover.svg);
+}
+
+.youtube {
+    background-image: url(/resources/svgs/_social/youtube.svg);
+}
+
+.youtube:hover {
+    background-image: url(/resources/svgs/_social/youtubeHover.svg);
+}
+
+.dribble {
+    background-image: url(/resources/svgs/_social/dribble.svg);
+}
+
+.dribble:hover {
+    background-image: url(/resources/svgs/_social/dribbleHover.svg);
+}
+
+.mail {
+    background-image: url(/resources/svgs/_social/mail.svg);
+}
+
+.mail:hover {
+    background-image: url(/resources/svgs/_social/mailHover.svg);
+}
+
 
 /* Navigation */
 
@@ -90,24 +217,23 @@ nav {
     align-items: center;
     list-style: none;
     column-gap: 4rem;
+    overflow: hidden;
 }
 
 nav li {
     width: 15rem;
 }
 
-a {
+nav a {
     color: white;
     fill: white;
 }
 
-a:hover {
+nav a:hover {
     font-weight: 700;
-    color: yellow;
-    fill: yellow;
 }
 
-a svg {
+nav a svg {
     padding-right: 1rem;
 }
 
@@ -116,6 +242,11 @@ a svg {
     width: 32px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 /* Logo */
 
@@ -123,7 +254,7 @@ a svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 56px 0px;
+    padding: 88px 0px;
 }
 
 .logo img {
@@ -135,4 +266,32 @@ a svg {
 
 header img {
     width: 100%;
+}
+
+/* Large navigation */
+
+.navmenu {
+    height: 800px;
+}
+
+
+/* Videos */
+
+.leftBottom {
+    background-image: url(/resources/svgs/videos/leftBottom.svg);
+}
+
+.rightBottom {
+    color: white;
+    text-align: center;
+    background-image: url(/resources/svgs/videos/rightBottom.svg);
+}
+
+.rightBottom h3 {
+    color: #91c9ff;
+}
+
+.rightBottom a:hover {
+    opacity: 1;
+    color: #91c9ff;
 }
