@@ -442,6 +442,29 @@ header img {
 
 /* 3D modelling */
 
+.dModelling .leftBottom {
+    background-image: url(/resources/svgs/3dModelling/3dModellingLeftBottom.svg);
+}
+
+.dModelling .rightBottom {
+    color: white;
+    text-align: center;
+    background-image: url(/resources/svgs/3dModelling/3dModellingRightBottom.svg);
+}
+
+.dModelling .rightBottom {
+    justify-content: start;
+}
+
+.dModelling .rightBottom h3 {
+    color: #ff9999;
+}
+
+.dModelling .rightBottom a:hover {
+    opacity: 1;
+    color: #ff9999;
+}
+
 /* 3D visualising */
 
 /* Projecting */
