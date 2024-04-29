@@ -43,64 +43,27 @@ body {
 }
 
 a {
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Navigation */
-
-nav {
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    column-gap: 4rem;
-}
-
-nav li {
-    width: 240px;
-}
-
-a {
     justify-content: center;
     color: white;
     text-decoration: none;
-    gap: 1rem;
 }
 
-a svg {
-    fill: white;
+/* Fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.icon-home {
-    height: 2rem;
-    width: 2rem;
-    fill: white;
+a {
+    font-size: 1.6rem;
 }
-
-a:hover {
-    font-weight: 700;
-    color: yellow;
-    fill: yellow;
-}
-
-img:hover {
-    fill: yellow;
-}
-
-/* Logo */
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 88px 0px;
-}
-
-.logo img {
-    height: 127px;
-}
-
 
 /* Variables */
 
@@ -117,4 +80,52 @@ img:hover {
 
 .color-bg-primary {
     background-color: #333333;
+}
+
+/* Navigation */
+
+nav {
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    column-gap: 4rem;
+}
+
+nav li {
+    width: 15rem;
+}
+
+a {
+    color: white;
+    fill: white;
+}
+
+a:hover {
+    font-weight: 700;
+    color: yellow;
+    fill: yellow;
+}
+
+a svg {
+    padding-right: 1rem;
+}
+
+.icon-home {
+    height: 32px;
+    width: 32px;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 0px;
+}
+
+.logo img {
+    height: 127px;
 }
