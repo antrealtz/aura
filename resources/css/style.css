@@ -81,6 +81,11 @@ a {
     font-size: 1.6rem;
 }
 
+
+
+
+
+
 /* Variables */
 
 .flex-col {
@@ -285,6 +290,10 @@ nav a svg {
     width: 100%;
 }
 
+
+
+
+
 /* Logo */
 
 .top {
@@ -344,6 +353,10 @@ header img {
 .navmenu object {
     width: 227px;
     height: 227px;
+}
+
+.navmenu .videos {
+    background-image: url(/resources/animations/videos.html);
 }
 
 
