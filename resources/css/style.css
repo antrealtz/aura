@@ -44,6 +44,7 @@ body {
 
 main {
     row-gap: 8rem;
+    padding-bottom: 8rem;
 }
 
 a {
@@ -265,14 +266,14 @@ nav a svg {
 
 /* Logo */
 
-.logo {
+header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 88px 0px;
 }
 
-.logo img {
+header .logo img {
     height: 127px;
 }
 
@@ -516,3 +517,18 @@ header img {
 }
 
 /* Footer */
+
+footer {
+    padding: 50px;
+    background-color: #333333;
+    justify-content: space-between;
+}
+
+footer .logo {
+    fill: black;
+    display: flex;
+}
+
+footer .logo img {
+    height: 73px;
+}
