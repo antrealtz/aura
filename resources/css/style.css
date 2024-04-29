@@ -266,14 +266,14 @@ nav a svg {
 
 /* Logo */
 
-header .logo {
+.top {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 88px 0px;
 }
 
-header .logo img {
+.top img {
     height: 127px;
 }
 
