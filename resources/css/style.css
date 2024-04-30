@@ -353,10 +353,7 @@ header img {
 .navmenu object {
     width: 227px;
     height: 227px;
-}
-
-.navmenu .videos {
-    background-image: url(/resources/animations/videos.html);
+    cursor: pointer;
 }
 
 
@@ -396,6 +393,10 @@ header img {
 
 .animations .leftBottom {
     background-image: url(/resources/svgs/animations/animationsLeftBottom.svg);
+}
+
+.animations .right {
+    align-items: end;
 }
 
 .animations .rightBottom {
@@ -456,6 +457,10 @@ header img {
     background-image: url(/resources/svgs/branding/brandingLeftBottom.svg);
 }
 
+.branding .right {
+    align-items: end;
+}
+
 .branding .rightBottom {
     color: white;
     text-align: center;
@@ -514,6 +519,10 @@ header img {
     background-image: url(/resources/svgs/rebranding/rebrandingLeftBottom.svg);
 }
 
+.rebranding .right {
+    align-items: end;
+}
+
 .rebranding .rightBottom {
     color: white;
     text-align: center;
@@ -570,6 +579,10 @@ header img {
 
 .dVisualising .leftBottom {
     background-image: url(/resources/svgs/3dVisualising/3dVisualisingLeftBottom.svg);
+}
+
+.dVisualising .right {
+    align-items: end;
 }
 
 .dVisualising .rightBottom {
