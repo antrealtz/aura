@@ -192,59 +192,59 @@ a {
 /* Socials */
 
 .vk {
-    background-image: url(./resources/svgs/_social/vk.svg);
+    background-image: url(./../svgs/_social/vk.svg);
 }
 
 .vk:hover, .dropdown-content a:hover .vk {
-    background-image: url(./resources/svgs/_social/vkHover.svg);
+    background-image: url(./../svgs/_social/vkHover.svg);
 }
 
 .tele {
-    background-image: url(./resources/svgs/_social/tele.svg);
+    background-image: url(./../svgs/_social/tele.svg);
 }
 
 .tele:hover, .dropdown-content a:hover .tele  {
-    background-image: url(./resources/svgs/_social/teleHover.svg);
+    background-image: url(./../svgs/_social/teleHover.svg);
 }
 
 .viber {
-    background-image: url(./resources/svgs/_social/viber.svg);
+    background-image: url(./../svgs/_social/viber.svg);
 }
 
 .viber:hover, .dropdown-content a:hover .viber {
-    background-image: url(./resources/svgs/_social/viberHover.svg);
+    background-image: url(./../svgs/_social/viberHover.svg);
 }
 
 .whatsapp {
-    background-image: url(./resources/svgs/_social/whatsapp.svg);
+    background-image: url(./../svgs/_social/whatsapp.svg);
 }
 
 .whatsapp:hover, .dropdown-content a:hover .whatsapp {
-    background-image: url(./resources/svgs/_social/whatsappHover.svg);
+    background-image: url(./../svgs/_social/whatsappHover.svg);
 }
 
 .youtube {
-    background-image: url(./resources/svgs/_social/youtube.svg);
+    background-image: url(./../svgs/_social/youtube.svg);
 }
 
 .youtube:hover, .dropdown-content a:hover .youtube {
-    background-image: url(./resources/svgs/_social/youtubeHover.svg);
+    background-image: url(./../svgs/_social/youtubeHover.svg);
 }
 
 .dribble {
-    background-image: url(./resources/svgs/_social/dribble.svg);
+    background-image: url(./../svgs/_social/dribble.svg);
 }
 
 .dribble:hover, .dropdown-content a:hover .dribble {
-    background-image: url(./resources/svgs/_social/dribbleHover.svg);
+    background-image: url(./../svgs/_social/dribbleHover.svg);
 }
 
 .mail {
-    background-image: url(./resources/svgs/_social/mail.svg);
+    background-image: url(./../svgs/_social/mail.svg);
 }
 
 .mail:hover, .dropdown-content a:hover .mail {
-    background-image: url(./resources/svgs/_social/mailHover.svg);
+    background-image: url(./../svgs/_social/mailHover.svg);
 }
 
 
@@ -254,75 +254,75 @@ a {
 /* Categories */
 
 nav .videos {
-    background-image: url(./resources/svgs/_services/videos.svg);
+    background-image: url(./../svgs/_services/videos.svg);
 }
 
 nav .videos:hover, .dropdown-content a:hover .videos {
-    background-image: url(./resources/svgs/_services/videosHover.svg);
+    background-image: url(./../svgs/_services/videosHover.svg);
 }
 
 nav .animations {
-    background-image: url(./resources/svgs/_services/animations.svg);
+    background-image: url(./../svgs/_services/animations.svg);
 }
 
 nav .animations:hover, .dropdown-content a:hover .animations {
-    background-image: url(./resources/svgs/_services/animationsHover.svg);
+    background-image: url(./../svgs/_services/animationsHover.svg);
 }
 
 nav .graphicDesign {
-    background-image: url(./resources/svgs/_services/graphicDesign.svg);
+    background-image: url(./../svgs/_services/graphicDesign.svg);
 }
 
 nav .graphicDesign:hover, .dropdown-content a:hover .graphicDesign {
-    background-image: url(./resources/svgs/_services/graphicDesignHover.svg);
+    background-image: url(./../svgs/_services/graphicDesignHover.svg);
 }
 
 nav .branding {
-    background-image: url(./resources/svgs/_services/branding.svg);
+    background-image: url(./../svgs/_services/branding.svg);
 }
 
 nav .branding:hover, .dropdown-content a:hover .branding {
-    background-image: url(./resources/svgs/_services/brandingHover.svg);
+    background-image: url(./../svgs/_services/brandingHover.svg);
 }
 
 nav .logoDesign {
-    background-image: url(./resources/svgs/_services/logoDesign.svg);
+    background-image: url(./../svgs/_services/logoDesign.svg);
 }
 
 nav .logoDesign:hover, .dropdown-content a:hover .logoDesign {
-    background-image: url(./resources/svgs/_services/logoDesignHover.svg);
+    background-image: url(./../svgs/_services/logoDesignHover.svg);
 }
 
 nav .rebranding {
-    background-image: url(./resources/svgs/_services/rebranding.svg);
+    background-image: url(./../svgs/_services/rebranding.svg);
 }
 
 nav .rebranding:hover, .dropdown-content a:hover .rebranding {
-    background-image: url(./resources/svgs/_services/rebrandingHover.svg);
+    background-image: url(./../svgs/_services/rebrandingHover.svg);
 }
 
 nav .dModelling {
-    background-image: url(./resources/svgs/_services/3dModelling.svg);
+    background-image: url(./../svgs/_services/3dModelling.svg);
 }
 
 nav .dModelling:hover, .dropdown-content a:hover .dModelling {
-    background-image: url(./resources/svgs/_services/3dModellingHover.svg);
+    background-image: url(./../svgs/_services/3dModellingHover.svg);
 }
 
 nav .dVisualising {
-    background-image: url(./resources/svgs/_services/3dVisualising.svg);
+    background-image: url(./../svgs/_services/3dVisualising.svg);
 }
 
 nav .dVisualising:hover, .dropdown-content a:hover .dVisualising {
-    background-image: url(./resources/svgs/_services/3dVisualisingHover.svg);
+    background-image: url(./../svgs/_services/3dVisualisingHover.svg);
 }
 
 nav .projecting {
-    background-image: url(./resources/svgs/_services/projecting.svg);
+    background-image: url(./../svgs/_services/projecting.svg);
 }
 
 nav .projecting:hover, .dropdown-content a:hover .projecting {
-    background-image: url(./resources/svgs/_services/projectingHover.svg);
+    background-image: url(./../svgs/_services/projectingHover.svg);
 }
 
 
@@ -488,13 +488,13 @@ header img {
 /* Videos */
 
 .videos .leftBottom {
-    background-image: url(./resources/svgs/videos/videosLeftBottom.svg);
+    background-image: url(./../svgs/videos/videosLeftBottom.svg);
 }
 
 .videos .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/videos/videosRightBottom.svg);
+    background-image: url(./../svgs/videos/videosRightBottom.svg);
 }
 
 .videos .rightBottom {
@@ -517,7 +517,7 @@ header img {
 /* Animations */
 
 .animations .leftBottom {
-    background-image: url(./resources/svgs/animations/animationsLeftBottom.svg);
+    background-image: url(./../svgs/animations/animationsLeftBottom.svg);
 }
 
 .animations .right {
@@ -527,7 +527,7 @@ header img {
 .animations .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/animations/animationsRightbottom.svg);
+    background-image: url(./../svgs/animations/animationsRightbottom.svg);
 }
 
 .animations .rightBottom {
@@ -550,13 +550,13 @@ header img {
 /* Graphic design */
 
 .graphicDesign .leftBottom {
-    background-image: url(./resources/svgs/graphicDesign/graphicDesignLeftBottom.svg);
+    background-image: url(./../svgs/graphicDesign/graphicDesignLeftBottom.svg);
 }
 
 .graphicDesign .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/graphicDesign/graphicDesignRightBottom.svg);
+    background-image: url(./../svgs/graphicDesign/graphicDesignRightBottom.svg);
 }
 
 .graphicDesign .rightBottom {
@@ -579,7 +579,7 @@ header img {
 /* Branding */
 
 .branding .leftBottom {
-    background-image: url(./resources/svgs/branding/brandingLeftBottom.svg);
+    background-image: url(./../svgs/branding/brandingLeftBottom.svg);
 }
 
 .branding .right {
@@ -589,7 +589,7 @@ header img {
 .branding .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/branding/brandingRightBottom.svg);
+    background-image: url(./../svgs/branding/brandingRightBottom.svg);
 }
 
 .branding .rightBottom {
@@ -612,13 +612,13 @@ header img {
 /* Logo design */
 
 .logoDesign .leftBottom {
-    background-image: url(./resources/svgs/logoDesign/logoDesignLeftBottom.svg);
+    background-image: url(./../svgs/logoDesign/logoDesignLeftBottom.svg);
 }
 
 .logoDesign .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/logoDesign/logoDesignRightBottom.svg);
+    background-image: url(./../svgs/logoDesign/logoDesignRightBottom.svg);
 }
 
 .logoDesign .rightBottom {
@@ -641,7 +641,7 @@ header img {
 /* Rebranding */
 
 .rebranding .leftBottom {
-    background-image: url(./resources/svgs/rebranding/rebrandingLeftBottom.svg);
+    background-image: url(./../svgs/rebranding/rebrandingLeftBottom.svg);
 }
 
 .rebranding .right {
@@ -651,7 +651,7 @@ header img {
 .rebranding .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/rebranding/rebrandingRightBottom.svg);
+    background-image: url(./../svgs/rebranding/rebrandingRightBottom.svg);
 }
 
 .rebranding .rightBottom {
@@ -674,13 +674,13 @@ header img {
 /* 3D modelling */
 
 .dModelling .leftBottom {
-    background-image: url(./resources/svgs/3dModelling/3dModellingLeftBottom.svg);
+    background-image: url(./../svgs/3dModelling/3dModellingLeftBottom.svg);
 }
 
 .dModelling .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/3dModelling/3dModellingRightBottom.svg);
+    background-image: url(./../svgs/3dModelling/3dModellingRightBottom.svg);
 }
 
 .dModelling .rightBottom {
@@ -703,7 +703,7 @@ header img {
 /* 3D visualising */
 
 .dVisualising .leftBottom {
-    background-image: url(./resources/svgs/3dVisualising/3dVisualisingLeftBottom.svg);
+    background-image: url(./../svgs/3dVisualising/3dVisualisingLeftBottom.svg);
 }
 
 .dVisualising .right {
@@ -713,7 +713,7 @@ header img {
 .dVisualising .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/3dVisualising/3dVisualisingRightBottom.svg);
+    background-image: url(./../svgs/3dVisualising/3dVisualisingRightBottom.svg);
 }
 
 .dVisualising .rightBottom {
@@ -736,13 +736,13 @@ header img {
 /* Projecting */
 
 .projecting .leftBottom {
-    background-image: url(./resources/svgs/projecting/projectingLeftBottom.svg);
+    background-image: url(./../svgs/projecting/projectingLeftBottom.svg);
 }
 
 .projecting .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./resources/svgs/projecting/projectingRightBottom.svg);
+    background-image: url(./../svgs/projecting/projectingRightBottom.svg);
 }
 
 .projecting .rightBottom {
