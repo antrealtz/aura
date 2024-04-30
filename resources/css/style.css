@@ -215,12 +215,12 @@ a {
     background-image: url(/resources/svgs/_social/viberHover.svg);
 }
 
-.whatsup {
-    background-image: url(/resources/svgs/_social/whatsup.svg);
+.whatsapp {
+    background-image: url(/resources/svgs/_social/whatsapp.svg);
 }
 
-.whatsup:hover, .dropdown-content a:hover .whatsup {
-    background-image: url(/resources/svgs/_social/whatsupHover.svg);
+.whatsapp:hover, .dropdown-content a:hover .whatsapp {
+    background-image: url(/resources/svgs/_social/whatsappHover.svg);
 }
 
 .youtube {
