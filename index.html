@@ -8,6 +8,7 @@
   <!-- Не забыть про favicon -->
   <link rel="shortcut icon" href="" type=”image/x-icon”>
   <script src="/resources/js/fixedNavigation.js"></script>
+  <script src="/resources/js/scroll.js"></script>
   <title>Art Unit | AURA</title>
 </head>
 
@@ -31,8 +32,28 @@
     <li>
       <a href="#service" class="flex-row">Наши услуги</a>
     </li>
-    <li>
-      <a href="#order" class="flex-row">Сделать заказ</a>
+    <li class="dropdown">
+      <button class="dropbtn">
+        <a>Сделать заказ</a>
+      </button>
+      <div class="dropdown-content flex-col">
+        <a href="https://vk.com/artunitsev" target="_blank" class="flex-row">
+          <div class="socials vk"></div>
+          <div>Вконтакте</div>
+        </a>
+        <a href="">
+          <div class="socials tele"></div>
+          <div>Telegram</div>
+        </a>
+        <a href="">
+          <div class="socials viber"></div>
+          <div>Viber</div>
+        </a>
+        <a href="">
+          <div class="socials whatsup"></div>
+          <div>WhatsApp</div>
+        </a>
+      </div>
     </li>
     <li>
       <a href="#ourprojects" class="flex-row">Наши роботы</a>
@@ -82,7 +103,7 @@
 
   <main class="flex-col">
     <!-- Large navigation -->
-    <div class="navmenu flex-col">
+    <div id="navigation" class="navmenu flex-col">
       <h1>Наши услуги</h1>
       <div class="grid">
         <a href="#videos">

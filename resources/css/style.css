@@ -253,12 +253,12 @@ a {
 
 /* Categories */
 
-.videos {
-    background-image: url(/resources/svgs/_social/vk.svg);
+nav .videos {
+    background-image: url(/resources/svgs/_services/videos.svg);
 }
 
-.vk:hover, .dropdown-content a:hover .vk {
-    background-image: url(/resources/svgs/_social/vkHover.svg);
+nav .videos:hover, .dropdown-content a:hover .videos {
+    background-image: url(/resources/svgs/_services/videosHover.svg);
 }
 
 
@@ -337,7 +337,7 @@ nav .socials {
 }
 
 nav li {
-    width: 14rem;
+    width: 15rem;
 }
 
 nav a svg {
