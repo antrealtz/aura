@@ -778,11 +778,11 @@ footer .logo img {
     height: 73px;
 }
 
-footer a {
+footer div a {
     color: white;
 }
 
-footer a:hover {
+footer div a:hover {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-color: white;
