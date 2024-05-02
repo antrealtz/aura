@@ -396,9 +396,10 @@ nav a:hover, .dropdown:hover .dropbtn {
 nav .dropdown-content {
     display: none;
     position: absolute;
+    padding-bottom: 1rem;
     background-color: #333333;
     min-width: 25rem;
-    z-index: 1;
+    z-index: 100;
 }
 
 nav .dropdown-content a {
@@ -413,8 +414,8 @@ nav .dropdown-content a {
 }
 
 nav .socials {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
 }
 
 .dropdown-content a:hover {
@@ -429,13 +430,17 @@ nav li {
     min-width: 15rem;
 }
 
+nav a {
+    align-items: center;
+}
+
 nav a svg {
     padding-right: 1rem;
 }
 
 .icon-home {
-    height: 32px;
-    width: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .sticky {
@@ -445,8 +450,39 @@ nav a svg {
 }
 
 @media only screen and (max-width: 1440px) {
+    nav .socials {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    nav .dropdown-content a {
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+
     nav li {
         min-width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    nav .socials {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    nav .dropdown-content a {
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+
+    nav li {
+        min-width: 10rem;
+    }
+
+    .icon-home {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 
@@ -831,7 +867,8 @@ footer .socials {
     height: 64px;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1280px) {
+
     footer .socials {
         width: 48px;
         height: 48px;
