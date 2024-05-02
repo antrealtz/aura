@@ -3,23 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
   <!-- Не забыть про favicon -->
   <link rel="shortcut icon" href="" type=”image/x-icon”>
-  <script src="./resources/js/fixedNavigation.js"></script>
-  <script src="./resources/js/scroll.js"></script>
   <title>Art Unit | AURA</title>
 </head>
 
-<body>
+<body class="color-bg-primary">
   <!-- AURA -->
   <div id="home" class="top color-bg-primary">
     <img src="./resources/svgs/header/logo-white.svg">
   </div>
 
   <!-- Navigation -->
-  <nav class="flex-row color-bg-primary">
+  <nav id="navbar" class="flex-row color-bg-primary">
     <li class="dropdown">
       <button class="dropbtn">
         <a class="flex-row">
@@ -192,11 +190,11 @@
 
 
   <!-- Header -->
-  <header class="flex-col">
+  <header class="content flex-col">
     <img src="./resources/imgs/header.png">
   </header>
 
-  <main class="flex-col">
+  <main class="content flex-col color-bg-white">
     <!-- Large navigation -->
     <div id="navigation" class="navmenu flex-col">
       <h1>Наши услуги</h1>
@@ -748,6 +746,9 @@
       <img src="./resources/svgs/footer/logo-black.svg">
     </a>
   </footer>
+
+  <script src="./resources/js/fixedNavigation.js"></script>
+  <script src="./resources/js/scroll.js"></script>
 </body>
 
 </html>

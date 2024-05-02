@@ -39,7 +39,6 @@
 /* Basics */
 
 html {
-    background-color: white;
     font-size: 16px;
     width: 100%;
 }
@@ -64,6 +63,7 @@ a {
 
 
 
+
 /* Fonts */
 
 h1,
@@ -79,6 +79,19 @@ a {
 
 a {
     font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1440px) {
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    a {
+        font-size: 1rem;
+    }
 }
 
 
@@ -117,6 +130,10 @@ a {
 
 .color-bg-primary {
     background-color: #333333;
+}
+
+.color-bg-white {
+    background-color: white;
 }
 
 .left {
@@ -348,6 +365,16 @@ nav a {
     fill: white;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 80px;
+  }
+
 .dropdown {
     overflow: hidden;
 }
@@ -399,7 +426,7 @@ nav .socials {
 }
 
 nav li {
-    width: 15rem;
+    min-width: 15rem;
 }
 
 nav a svg {
@@ -417,6 +444,11 @@ nav a svg {
     width: 100%;
 }
 
+@media only screen and (max-width: 1440px) {
+    nav li {
+        min-width: 12rem;
+    }
+}
 
 
 
@@ -767,6 +799,7 @@ header img {
 footer {
     padding: 50px;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .logo {
@@ -780,12 +813,13 @@ footer .logo img {
 
 footer div a {
     color: white;
+    border: 2px solid #333;
 }
 
 footer div a:hover {
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-color: white;
+    border-bottom-color: white;
 }
 
 footer .flex-row {
@@ -793,6 +827,13 @@ footer .flex-row {
 }
 
 footer .socials {
-    height: 64px;
     width: 64px;
+    height: 64px;
+}
+
+@media only screen and (max-width: 1440px) {
+    footer .socials {
+        width: 48px;
+        height: 48px;
+    }
 }
