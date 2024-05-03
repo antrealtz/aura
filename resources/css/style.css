@@ -136,7 +136,7 @@ a {
 
 .leftUp {
     width: 100%;
-    height: 465px;
+    height: 29rem;
     overflow: hidden;
 }
 
@@ -151,7 +151,7 @@ a {
 
 .leftBottom {
     width: 100%;
-    height: 538px;
+    height: 33.5rem;
 }
 
 .leftBottom div p {
@@ -180,13 +180,12 @@ a {
     align-items: center;
     width: fit-content;
     font-weight: 600;
-    padding: 61px 182px;
+    padding: 4rem 10rem;
 }
 
 .rightBottom a:hover {
     cursor: pointer;
     font-weight: 700;
-    opacity: .6;
 }
 
 .socials {
@@ -389,10 +388,10 @@ nav a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
 nav .dropdown-content {
     display: none;
     position: absolute;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     background-color: #333333;
-    min-width: 25rem;
-    z-index: 100;
+    min-width: fit-content;
+    z-index: 1;
 }
 
 nav .dropdown-content a {
@@ -404,6 +403,7 @@ nav .dropdown-content a {
     justify-content: start;
     align-items: center;
     text-align: left;
+    white-space: nowrap;
 }
 
 nav .socials {
@@ -420,7 +420,8 @@ nav .socials {
 }
 
 nav li {
-    min-width: 15rem;
+    min-width: 16rem;
+    max-width: 18rem;
 }
 
 nav a {
@@ -458,7 +459,36 @@ nav a svg {
     }
 }
 
+/* Navigation list */
 
+nav .mainCategories {
+    width: 16rem;
+}
+
+nav .ourServices {
+    width: 22rem;
+}
+
+nav .requestService {
+    width: 12rem;
+}
+
+nav .ourProjects {
+    width: 22rem;
+}
+
+nav .contacts {
+    width: 20rem;
+}
+
+@media screen and (max-width: 1200px) {
+    nav .contacts {
+        left: auto;
+        right: 0;
+        max-width: 100%;
+        width: auto;
+    }
+}
 
 
 
