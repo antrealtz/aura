@@ -311,19 +311,19 @@ nav .rebranding:hover, .dropdown-content a:hover .rebranding {
     background-image: url(./../svgs/_services/rebrandingHover.svg);
 }
 
-nav .dModelling {
+nav .modelling {
     background-image: url(./../svgs/_services/3dModelling.svg);
 }
 
-nav .dModelling:hover, .dropdown-content a:hover .dModelling {
+nav .modelling:hover, .dropdown-content a:hover .modelling {
     background-image: url(./../svgs/_services/3dModellingHover.svg);
 }
 
-nav .dVisualising {
+nav .visualising {
     background-image: url(./../svgs/_services/3dVisualising.svg);
 }
 
-nav .dVisualising:hover, .dropdown-content a:hover .dVisualising {
+nav .visualising:hover, .dropdown-content a:hover .visualising {
     background-image: url(./../svgs/_services/3dVisualisingHover.svg);
 }
 
@@ -369,6 +369,7 @@ nav a {
 
 .dropdown {
     overflow: hidden;
+    z-index: 2;
 }
 
 .dropdown .dropbtn {
@@ -481,7 +482,7 @@ nav .contacts {
     width: 20rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     nav .contacts {
         left: auto;
         right: 0;
@@ -744,25 +745,25 @@ header img {
 
 /* 3D modelling */
 
-.dModelling .leftBottom {
+.modelling .leftBottom {
     background-image: url(./../svgs/3dModelling/3dModellingLeftBottom.svg);
 }
 
-.dModelling .rightBottom {
+.modelling .rightBottom {
     color: white;
     text-align: center;
     background-image: url(./../svgs/3dModelling/3dModellingRightBottom.svg);
 }
 
-.dModelling .rightBottom {
+.modelling .rightBottom {
     justify-content: start;
 }
 
-.dModelling .rightBottom h3 {
+.modelling .rightBottom h3 {
     color: #ff9999;
 }
 
-.dModelling .rightBottom a:hover {
+.modelling .rightBottom a:hover {
     opacity: 1;
     color: #ff9999;
 }
@@ -773,29 +774,29 @@ header img {
 
 /* 3D visualising */
 
-.dVisualising .leftBottom {
+.visualising .leftBottom {
     background-image: url(./../svgs/3dVisualising/3dVisualisingLeftBottom.svg);
 }
 
-.dVisualising .right {
+.visualising .right {
     align-items: end;
 }
 
-.dVisualising .rightBottom {
+.visualising .rightBottom {
     color: white;
     text-align: center;
     background-image: url(./../svgs/3dVisualising/3dVisualisingRightBottom.svg);
 }
 
-.dVisualising .rightBottom {
+.visualising .rightBottom {
     justify-content: end;
 }
 
-.dVisualising .rightBottom h3 {
+.visualising .rightBottom h3 {
     color: #cc99cc;
 }
 
-.dVisualising .rightBottom a:hover {
+.visualising .rightBottom a:hover {
     opacity: 1;
     color: #cc99cc;
 }
