@@ -327,12 +327,12 @@ nav .visualising:hover, .dropdown-content a:hover .visualising {
     background-image: url(./../svgs/_services/3dVisualisingHover.svg);
 }
 
-nav .projecting {
-    background-image: url(./../svgs/_services/projecting.svg);
+nav .projectDesign {
+    background-image: url(./../svgs/_services/projectDesign.svg);
 }
 
-nav .projecting:hover, .dropdown-content a:hover .projecting {
-    background-image: url(./../svgs/_services/projectingHover.svg);
+nav .projectDesign:hover, .dropdown-content a:hover .projectDesign {
+    background-image: url(./../svgs/_services/projectDesign.svg);
 }
 
 
@@ -805,27 +805,27 @@ header img {
 
 
 
-/* Projecting */
+/* Project Design */
 
-.projecting .leftBottom {
-    background-image: url(./../svgs/projecting/projectingLeftBottom.svg);
+.projectDesign .leftBottom {
+    background-image: url(./../svgs/projectDesign/projectDesignLeftBottom.svg);
 }
 
-.projecting .rightBottom {
+.projectDesign .rightBottom {
     color: white;
     text-align: center;
-    background-image: url(./../svgs/projecting/projectingRightBottom.svg);
+    background-image: url(./../svgs/projectDesign/projectDesignRightBottom.svg);
 }
 
-.projecting .rightBottom {
+.projectDesign .rightBottom {
     justify-content: start;
 }
 
-.projecting .rightBottom h3 {
+.projectDesign .rightBottom h3 {
     color: #ffcc99;
 }
 
-.projecting .rightBottom a:hover {
+.projectDesign .rightBottom a:hover {
     opacity: 1;
     color: #ffcc99;
 }
