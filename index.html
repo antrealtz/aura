@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- Без адаптива
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- Без адаптива -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
   <!-- Не забыть про favicon -->
   <link rel="shortcut icon" href="" type=”image/x-icon”>
@@ -21,7 +21,7 @@
   <nav id="navbar" class="flex-row color-bg-primary">
     <li class="dropdown">
       <button class="dropbtn">
-        <a class="flex-row">
+        <a href="#home" class="flex-row">
           <svg class="icon-home" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path d="M3.2,8.7L6,4.9c2.2-3,6.3-3.8,9.3-1.6L19.1,6c3,2.2,3.8,6.3,1.6,9.3L18,19.1c-2.2,3-6.3,3.8-9.3,1.6L4.9,18
             C1.9,15.8,1.1,11.7,3.2,8.7z M23.2,10.1l-2.5-5.5c-1.9-4.1-6.8-5.7-10.7-3.8L4.6,3.3C0.8,5.2-1.1,9.8,0.8,13.9l2.5,5.2
@@ -154,7 +154,7 @@
     </li>
     <li class="dropdown">
       <button class="dropbtn">
-        <a>Контакты</a>
+        <a href="#footer">Контакты</a>
       </button>
       <div class="contacts dropdown-content flex-col">
         <a href="https://vk.com/artunitsev" target="_blank" class="flex-row">
@@ -195,9 +195,9 @@
     <img src="./resources/imgs/header.png">
   </header>
 
-  <main class="content flex-col color-bg-white">
+  <main id="mainContainer" class="content flex-col color-bg-white">
     <!-- Large navigation -->
-    <div id="navigation" class="navmenu flex-col">
+    <div id="navigation" class="section navmenu flex-col">
       <h1>Наши услуги</h1>
       <div class="grid">
         <a href="#videos">
@@ -226,7 +226,7 @@
 
 
     <!-- Videos -->
-    <div id="videos" class="videos flex-row block">
+    <div id="videos" class="section videos flex-row block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/videos.png">
@@ -283,7 +283,7 @@
     </div>
 
     <!-- Animations -->
-    <div id="animations" class="animations flex-row-reverse block">
+    <div id="animations" class="section animations flex-row-reverse block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/animations.png">
@@ -337,7 +337,7 @@
     </div>
 
     <!-- Graphic design -->
-    <div id="graphicDesign" class="graphicDesign flex-row block">
+    <div id="graphicDesign" class="section graphicDesign flex-row block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/graphicDesign.png">
@@ -391,7 +391,7 @@
     </div>
 
     <!-- Branding -->
-    <div id="branding" class="branding flex-row-reverse block">
+    <div id="branding" class="section branding flex-row-reverse block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/branding.png">
@@ -445,7 +445,7 @@
     </div>
 
     <!-- Logo design -->
-    <div id="logoDesign" class="logoDesign flex-row block">
+    <div id="logoDesign" class="section logoDesign flex-row block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/logoDesign.png">
@@ -500,7 +500,7 @@
     </div>
 
     <!-- Rebranding -->
-    <div id="rebranding" class="rebranding flex-row-reverse block">
+    <div id="rebranding" class="section rebranding flex-row-reverse block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/rebranding.png">
@@ -554,7 +554,7 @@
     </div>
 
     <!-- 3D modelling -->
-    <div id="modelling" class="modelling flex-row block">
+    <div id="modelling" class="section modelling flex-row block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/3dModelling.png">
@@ -608,7 +608,7 @@
     </div>
 
     <!-- 3D visualising-->
-    <div id="visualising" class="visualising flex-row-reverse block">
+    <div id="visualising" class="section visualising flex-row-reverse block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/3dVisualising.png">
@@ -662,7 +662,7 @@
     </div>
 
     <!-- Project design -->
-    <div id="projectDesign" class="projectDesign flex-row block">
+    <div id="projectDesign" class="section projectDesign flex-row block">
       <div class="left flex-col">
         <div class="leftUp">
           <img src="./resources/imgs/projectDesign.png">
@@ -716,7 +716,7 @@
     </div>
   </main>
 
-  <footer class="flex-row color-bg-primary">
+  <footer id="footer" class="section flex-row color-bg-primary">
     <!-- Links -->
     <div class="flex-row">
       <a href="">
@@ -748,7 +748,6 @@
     </a>
   </footer>
 
-  <script src="./resources/js/fixedNavigation.js"></script>
   <script src="./resources/js/scroll.js"></script>
 </body>
 
