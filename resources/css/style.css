@@ -112,7 +112,9 @@ a {
 
 
 
-
+.mainContainer {
+    scroll-snap-type: mandatory;
+}
 
 /* Block */
 
@@ -120,6 +122,7 @@ a {
     height: 100vh;
     padding-top: 6rem;
     column-gap: 2rem;
+    background-color: white;
 }
 
 
@@ -394,15 +397,6 @@ nav a {
     fill: white;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 80px;
-  }
 
 .dropdown {
     position: relative;
@@ -541,7 +535,7 @@ nav .contacts {
     display: flex;
     height: 960px;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 .navmenu h1 {

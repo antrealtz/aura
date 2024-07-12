@@ -13,4 +13,4 @@ window.addEventListener('wheel', (event) => {
     }
     
     mainContainer.children[currentSection].scrollIntoView({ behavior: 'smooth' });
-}, { passive: false }); // Ensure passive is set to false for preventDefault to work
+}, { passive: true }); // Ensure passive is set to false for preventDefault to work
