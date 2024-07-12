@@ -48,7 +48,6 @@ body {
 }
 
 main {
-    row-gap: 8rem;
     padding-bottom: 8rem;
 }
 
@@ -118,6 +117,7 @@ a {
 /* Block */
 
 .block {
+    padding-top: 6rem;
     column-gap: 2rem;
 }
 
@@ -406,6 +406,7 @@ nav a {
 .dropdown {
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 
 .dropdown .dropbtn {
