@@ -532,6 +532,7 @@ nav .contacts {
 /* Large navigation */
 
 .navmenu {
+    padding-top: 8rem;
     display: flex;
     height: 960px;
     align-items: center;
