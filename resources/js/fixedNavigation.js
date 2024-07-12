@@ -15,3 +15,11 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+window.onscroll = function() {
+  var banner = document.querySelector('.home');
+  if (window.pageYOffset > banner.offsetHeight) {
+      banner.style.top = '-200px'; // Hide the banner smoothly by moving it up
+  } else {
+      banner.style.top = '0'; // Show the banner smoothly by moving it back down
+  }
+};

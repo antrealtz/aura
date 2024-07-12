@@ -339,6 +339,38 @@ nav .projectDesign:hover, .dropdown-content a:hover .projectDesign {
 
 
 
+/* Logo */
+
+.top {
+    padding: 88px 0px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    z-index: 1;
+    position: relative;
+}
+
+.top img {
+    height: 127px;
+}
+
+
+
+
+
+/* Header */
+
+header img {
+    width: 100%;
+}
+
+
+
+
 /* Navigation */
 
 nav {
@@ -346,8 +378,12 @@ nav {
     justify-content: center;
     align-items: center;
     list-style: none;
-    overflow: hidden;
+    overflow: visible;
     background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 nav a {
@@ -368,8 +404,8 @@ nav a {
   }
 
 .dropdown {
-    overflow: hidden;
-    z-index: 2;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown .dropbtn {
@@ -392,7 +428,8 @@ nav .dropdown-content {
     padding-bottom: .5rem;
     background-color: #333333;
     min-width: fit-content;
-    z-index: 1;
+    z-index: 5;
+    top: 100%;
 }
 
 nav .dropdown-content a {
@@ -492,29 +529,6 @@ nav .contacts {
 }
 
 
-
-/* Logo */
-
-.top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 88px 0px;
-}
-
-.top img {
-    height: 127px;
-}
-
-
-
-
-
-/* Header */
-
-header img {
-    width: 100%;
-}
 
 
 
