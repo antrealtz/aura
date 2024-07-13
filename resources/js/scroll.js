@@ -43,13 +43,17 @@ document.querySelectorAll('.dropdown-content a').forEach(item => {
     });
 });
 
+// Save the scroll position only while the user is navigating
 window.addEventListener('scroll', () => {
-    localStorage.setItem('scrollPosition', window.scrollY);
+    sessionStorage.setItem('scrollPosition', window.scrollY);
 });
 
+// Remove the saved scroll position when the page is loaded to prevent it from being used after a refresh
 window.addEventListener('load', () => {
-    const scrollPosition = localStorage.getItem('scrollPosition');
-    if (scrollPosition) {
-        window.scrollTo(0, parseInt(scrollPosition, 10));
-    }
+    sessionStorage.removeItem('scrollPosition');
+});
+
+// Optionally, scroll to top on page load
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
 });
