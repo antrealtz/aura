@@ -14,3 +14,16 @@ window.addEventListener('wheel', (event) => {
     
     mainContainer.children[currentSection].scrollIntoView({ behavior: 'smooth' });
 }, { passive: true }); // Ensure passive is set to false for preventDefault to work
+
+document.querySelectorAll('.dropdown-content a').forEach(item => {
+    item.addEventListener('click', event => {
+        // Hide the dropdown menu
+        const dropdownContent = item.closest('.dropdown-content');
+        dropdownContent.style.display = 'none';
+
+        // Optionally, you can programmatically close the dropdown
+        setTimeout(() => {
+            dropdownContent.style.display = '';
+        }, 0);
+    });
+});
