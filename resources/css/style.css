@@ -117,12 +117,6 @@ a {
 
 /* Block */
 
-.section
-
-.mainContainer {
-    scroll-snap-type: mandatory;
-}
-
 .block {
     height: 100vh;
     padding-top: 6rem;
@@ -568,14 +562,13 @@ nav .contacts {
     cursor: pointer;
 }
 
-.nav-link
-
 
 
 
 
 
 /* Videos */
+
 
 .videos .leftBottom {
     background-image: url(./../svgs/videos/videosLeftBottom.svg);

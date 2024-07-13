@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to scroll to the current section
     function scrollToSection(index) {
         currentSection = index;
-        console.log(`Scrolling to section ${index}`); // Debugging line
         sections[currentSection].scrollIntoView({ behavior: 'smooth' });
     }
 
@@ -26,8 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.nav-link').forEach((link, index) => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log(`Link clicked: ${index}`); // Debugging line
-            scrollToSection(index - 1); // Adjust index to skip the first non-section button
+            scrollToSection(index); // Adjust index to skip the first non-section button
         });
     });
 });
@@ -43,4 +41,15 @@ document.querySelectorAll('.dropdown-content a').forEach(item => {
             dropdownContent.style.display = '';
         }, 0);
     });
+});
+
+window.addEventListener('scroll', () => {
+    localStorage.setItem('scrollPosition', window.scrollY);
+});
+
+window.addEventListener('load', () => {
+    const scrollPosition = localStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        window.scrollTo(0, parseInt(scrollPosition, 10));
+    }
 });
