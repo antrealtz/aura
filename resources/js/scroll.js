@@ -30,21 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollToSection(index - 1); // Adjust index to skip the first non-section button
         });
     });
+});
 
-    // Handle dropdown menu functionality
-    const dropdownButton = document.querySelector('.nav-button');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
+document.querySelectorAll('.dropdown-content a').forEach(item => {
+    item.addEventListener('click', event => {
+        // Hide the dropdown menu
+        const dropdownContent = item.closest('.dropdown-content');
+        dropdownContent.style.display = 'none';
 
-    dropdownButton.addEventListener('click', () => {
-        dropdownMenu.classList.toggle('show'); // Toggle the dropdown menu visibility
-    });
-
-    document.querySelectorAll('.dropdown-menu .nav-link').forEach((link, index) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            console.log(`Dropdown link clicked: ${index}`); // Debugging line
-            scrollToSection(index); // Adjust index to scroll to the correct section
-            dropdownMenu.classList.remove('show'); // Hide the dropdown menu
-        });
+        // Optionally, you can programmatically close the dropdown
+        setTimeout(() => {
+            dropdownContent.style.display = '';
+        }, 0);
     });
 });
