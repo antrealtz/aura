@@ -396,7 +396,6 @@ nav a {
     fill: white;
 }
 
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -536,6 +535,7 @@ nav .contacts {
     height: 960px;
     align-items: center;
     justify-content: start;
+    overflow: hidden;
 }
 
 .nav-menu h1 {
@@ -550,17 +550,16 @@ nav .contacts {
     grid-template-rows: repeat(3, 227px);
 }
 
-.nav-menu object {
+.nav-menu iframe {
     width: 227px;
     height: 227px;
     cursor: pointer;
+    pointer-events: none;
+    border: none;
 }
 
-.nav-menu embed {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
+
+
 
 
 

@@ -2,35 +2,65 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.section');
     let currentSection = 0;
 
-    // Function to scroll to the current section
+    // Function to scroll to a section
     function scrollToSection(index) {
         currentSection = index;
         sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+        // Save the current section index in session storage
+        sessionStorage.setItem('scrollPosition', currentSection);
     }
 
     // Handle mouse wheel scrolling
+    let wheelEventActive = true; // Flag to prevent simultaneous wheel events
     window.addEventListener('wheel', (event) => {
         event.preventDefault();
-        if (event.deltaY > 0) {
-            // Scrolling down
-            currentSection = Math.min(currentSection + 1, sections.length - 1);
-        } else {
-            // Scrolling up
-            currentSection = Math.max(currentSection - 1, 0);
-        }
+        if (!wheelEventActive) return;
+
+        wheelEventActive = false;
+        setTimeout(() => {
+            wheelEventActive = true;
+        }, 10); // Reduced delay for smoother scrolling
+
+        const direction = event.deltaY > 0 ? 1 : -1; // Determine scroll direction
+
+        // Update current section based on scroll direction
+        currentSection = Math.min(Math.max(currentSection + direction, 0), sections.length - 1);
         scrollToSection(currentSection);
     }, { passive: false });
 
-    // Handle navigation link clicks
-    document.querySelectorAll('.nav-link').forEach((link, index) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            scrollToSection(index); // Adjust index to skip the first non-section button
+    // Smooth scrolling for links in dropdown menu
+    document.querySelectorAll('a[data-target]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent the default link behavior
+
+            const targetId = this.getAttribute('data-target');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                // Smooth scroll to the target section
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                // Save the current section index in session storage
+                currentSection = Array.from(sections).indexOf(targetElement);
+                sessionStorage.setItem('scrollPosition', currentSection);
+            }
         });
     });
-});
 
-document.querySelectorAll('.dropdown-content a').forEach(item => {
+    // Restore scroll position on page load with improved handling
+    window.addEventListener('load', () => {
+        const savedScrollPosition = sessionStorage.getItem('scrollPosition');
+        if (savedScrollPosition !== null) {
+            // Scroll to the saved section index with a slight delay
+            currentSection = parseInt(savedScrollPosition, 10);
+            if (currentSection >= 0 && currentSection < sections.length) {
+                setTimeout(() => {
+                    sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+                }, 50); // Adjust delay as needed for smooth scroll
+            }
+        }
+    });
+});
+document.querySelectorAll('a[data-target]').forEach(item => {
     item.addEventListener('click', event => {
         // Hide the dropdown menu
         const dropdownContent = item.closest('.dropdown-content');
@@ -41,19 +71,4 @@ document.querySelectorAll('.dropdown-content a').forEach(item => {
             dropdownContent.style.display = '';
         }, 0);
     });
-});
-
-// Save the scroll position only while the user is navigating
-window.addEventListener('scroll', () => {
-    sessionStorage.setItem('scrollPosition', window.scrollY);
-});
-
-// Remove the saved scroll position when the page is loaded to prevent it from being used after a refresh
-window.addEventListener('load', () => {
-    sessionStorage.removeItem('scrollPosition');
-});
-
-// Optionally, scroll to top on page load
-window.addEventListener('load', () => {
-    window.scrollTo(0, 0);
 });
