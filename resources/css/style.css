@@ -500,28 +500,28 @@ nav a svg {
 
 /* Navigation list */
 
-nav .mainCategories {
+nav .aura-main-categories {
     width: 16rem;
 }
 
-nav .ourServices {
+nav .aura-our-services {
     width: 22rem;
 }
 
-nav .requestService {
+nav .aura-request-service {
     width: 12rem;
 }
 
-nav .ourProjects {
+nav .aura-our-projects {
     width: 22rem;
 }
 
-nav .contacts {
+nav .aura-contacts {
     width: 20rem;
 }
 
 @media only screen and (max-width: 1200px) {
-    nav .contacts {
+    nav .aura-contacts {
         left: auto;
         right: 0;
         max-width: 100%;
