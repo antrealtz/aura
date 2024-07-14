@@ -22,16 +22,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to save scroll position in localStorage
-    function saveScrollPosition(position) {
-        localStorage.setItem('scrollPosition', position.toString());
+    // Function to handle click on animation links
+    function handleAnimationClick(link) {
+        const targetId = link.getAttribute('data-target');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            // Smooth scroll to the target section
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+            // Update current section index and save in localStorage
+            currentSection = Array.from(sections).indexOf(targetElement);
+            saveScrollPosition(currentSection);
+        }
     }
 
-    // Function to restore scroll position from localStorage
+    // Function to save scroll position and current section in localStorage
+    function saveScrollPosition(position) {
+        localStorage.setItem('scrollPosition', position.toString());
+        localStorage.setItem('currentSection', currentSection.toString());
+    }
+
+    // Function to restore scroll position and current section from localStorage
     function restoreScrollPosition() {
         const savedScrollPosition = localStorage.getItem('scrollPosition');
-        if (savedScrollPosition !== null) {
-            currentSection = parseInt(savedScrollPosition, 10);
+        const savedCurrentSection = localStorage.getItem('currentSection');
+        
+        if (savedScrollPosition !== null && savedCurrentSection !== null) {
+            currentSection = parseInt(savedCurrentSection, 10);
             if (currentSection >= 0 && currentSection < sections.length) {
                 setTimeout(() => {
                     sections[currentSection].scrollIntoView({ behavior: 'smooth' });
@@ -69,38 +86,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Smooth scrolling for animation links
+    document.querySelectorAll('.animation-container').forEach(container => {
+        container.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent the default link behavior
+            handleAnimationClick(this);
+        });
+    });
+
     // Restore scroll position on page load
     window.addEventListener('load', () => {
         restoreScrollPosition();
     });
 
-    // Save scroll position when leaving the page (optional)
+    // Save scroll position and current section when leaving the page (optional)
     window.addEventListener('beforeunload', () => {
         saveScrollPosition(currentSection);
-    });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.querySelectorAll('a[data-target]').forEach(item => {
-    item.addEventListener('click', event => {
-        // Hide the dropdown menu
-        const dropdownContent = item.closest('.dropdown-content');
-        dropdownContent.style.display = 'none';
-
-        // Optionally, you can programmatically close the dropdown
-        setTimeout(() => {
-            dropdownContent.style.display = '';
-        }, 0);
     });
 });

@@ -37,9 +37,6 @@
 
 
 
-
-
-
     <div id="lottie"></div>
 
     <script>
@@ -55,29 +52,27 @@
         };
 
         var anim = lottie.loadAnimation(params);
-        var isPlaying = false;
         var isHovered = false;
+        var isPlaying = false;
+
+        window.addEventListener('message', function(event) {
+            if (event.data === 'playAnimation' && !isPlaying) {
+                isHovered = true;
+                anim.goToAndPlay(0);
+                isPlaying = true;
+            } else if (event.data === 'mouseLeave') {
+                isHovered = false;
+            }
+        });
 
         anim.addEventListener('complete', function() {
-            isPlaying = false; // Set playing flag to false when animation completes
+            isPlaying = false;
             if (isHovered) {
-                anim.goToAndStop(0, true); // Restart animation from the beginning
-                anim.play(); // Play animation again if still hovered
-                isPlaying = true; // Set playing flag to true
+                anim.goToAndPlay(0);
+                isPlaying = true;
+            } else {
+                window.parent.postMessage('animationComplete', '*');
             }
-        });
-
-        document.getElementById('lottie').addEventListener('mouseover', function() {
-            isHovered = true;
-            if (!isPlaying) {
-                anim.goToAndStop(0, true); // Restart animation from the beginning
-                anim.play(); // Play animation on hover
-                isPlaying = true; // Set playing flag to true
-            }
-        });
-
-        document.getElementById('lottie').addEventListener('mouseout', function() {
-            isHovered = false; // Stop the loop when the mouse is not over the element
         });
     </script>
 </body>

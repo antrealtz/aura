@@ -555,18 +555,30 @@ nav .aura-contacts {
     display: grid;
     grid-template-columns: repeat(3, 227px);
     grid-template-rows: repeat(3, 227px);
+    gap: 1rem;
 }
 
 .nav-menu .grid-item {
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Example of hover animation */
+}
+
+.nav-menu .grid-item:hover {
+    transform: scale(1.1);
+}
+
+.nav-menu .animation-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-menu .animation {
+    width: 227px;
+    height: 227px;
     border: none;
 }
 
-.nav-menu .anima {
-    width: 227px;
-    height: 227px;
-    border: none; /* Remove the border */
-}
 
 
 
