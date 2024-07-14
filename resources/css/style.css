@@ -113,6 +113,13 @@ a {
 
 
 
+/* Main container */
+/*
+.main-container {
+    scroll-snap-type: mandatory;
+}
+*/
+
 
 
 /* Block */
@@ -550,12 +557,15 @@ nav .contacts {
     grid-template-rows: repeat(3, 227px);
 }
 
-.nav-menu iframe {
+.nav-menu .grid-item {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+}
+
+.nav-menu .anima {
     width: 227px;
     height: 227px;
-    cursor: pointer;
-    pointer-events: none;
-    border: none;
+    border: none; /* Remove the border */
 }
 
 

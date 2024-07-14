@@ -6,8 +6,41 @@ document.addEventListener('DOMContentLoaded', () => {
     function scrollToSection(index) {
         currentSection = index;
         sections[currentSection].scrollIntoView({ behavior: 'smooth' });
-        // Save the current section index in session storage
-        sessionStorage.setItem('scrollPosition', currentSection);
+    }
+
+    // Function to handle click on dropdown menu links
+    function handleDropdownMenuClick(link) {
+        const targetId = link.getAttribute('data-target');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            // Smooth scroll to the target section
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+            // Update current section index and save in localStorage
+            currentSection = Array.from(sections).indexOf(targetElement);
+            saveScrollPosition(currentSection);
+        }
+    }
+
+    // Function to save scroll position in localStorage
+    function saveScrollPosition(position) {
+        localStorage.setItem('scrollPosition', position.toString());
+    }
+
+    // Function to restore scroll position from localStorage
+    function restoreScrollPosition() {
+        const savedScrollPosition = localStorage.getItem('scrollPosition');
+        if (savedScrollPosition !== null) {
+            currentSection = parseInt(savedScrollPosition, 10);
+            if (currentSection >= 0 && currentSection < sections.length) {
+                setTimeout(() => {
+                    sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+                }, 50); // Adjust delay as needed for smooth scroll
+            }
+        } else {
+            // Default behavior: scroll to the top of the page with animation
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     }
 
     // Handle mouse wheel scrolling
@@ -32,34 +65,33 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[data-target]').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent the default link behavior
-
-            const targetId = this.getAttribute('data-target');
-            const targetElement = document.querySelector(targetId);
-
-            if (targetElement) {
-                // Smooth scroll to the target section
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-                // Save the current section index in session storage
-                currentSection = Array.from(sections).indexOf(targetElement);
-                sessionStorage.setItem('scrollPosition', currentSection);
-            }
+            handleDropdownMenuClick(this);
         });
     });
 
-    // Restore scroll position on page load with improved handling
+    // Restore scroll position on page load
     window.addEventListener('load', () => {
-        const savedScrollPosition = sessionStorage.getItem('scrollPosition');
-        if (savedScrollPosition !== null) {
-            // Scroll to the saved section index with a slight delay
-            currentSection = parseInt(savedScrollPosition, 10);
-            if (currentSection >= 0 && currentSection < sections.length) {
-                setTimeout(() => {
-                    sections[currentSection].scrollIntoView({ behavior: 'smooth' });
-                }, 50); // Adjust delay as needed for smooth scroll
-            }
-        }
+        restoreScrollPosition();
+    });
+
+    // Save scroll position when leaving the page (optional)
+    window.addEventListener('beforeunload', () => {
+        saveScrollPosition(currentSection);
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.querySelectorAll('a[data-target]').forEach(item => {
     item.addEventListener('click', event => {
         // Hide the dropdown menu
