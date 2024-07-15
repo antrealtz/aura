@@ -361,7 +361,7 @@ nav .projectDesign {
 }
 
 nav .projectDesign:hover, .dropdown-content a:hover .projectDesign {
-    background-image: url("../svgs/services/projectDesign.svg");
+    background-image: url("../svgs/services/projectDesignHover.svg");
 }
 
 
