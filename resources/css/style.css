@@ -187,6 +187,8 @@ a {
 
 .rightUp img {
     height: 100%;
+    padding: 0 2rem;
+    width: 100%;
 }
 
 .rightBottom {
@@ -229,59 +231,59 @@ a {
 /* Socials */
 
 .vk {
-    background-image: url(./../svgs/_social/vk.svg);
+    background-image: url(/resources/svgs/_social/vk.svg);
 }
 
 .vk:hover, .dropdown-content a:hover .vk {
-    background-image: url(./../svgs/_social/vkHover.svg);
+    background-image: url(/resources/svgs/_social/vkHover.svg);
 }
 
 .tele {
-    background-image: url(./../svgs/_social/tele.svg);
+    background-image: url(/resources/svgs/_social/tele.svg);
 }
 
 .tele:hover, .dropdown-content a:hover .tele  {
-    background-image: url(./../svgs/_social/teleHover.svg);
+    background-image: url(/resources/svgs/_social/teleHover.svg);
 }
 
 .viber {
-    background-image: url(./../svgs/_social/viber.svg);
+    background-image: url(/resources/svgs/_social/viber.svg);
 }
 
 .viber:hover, .dropdown-content a:hover .viber {
-    background-image: url(./../svgs/_social/viberHover.svg);
+    background-image: url(/resources/svgs/_social/viberHover.svg);
 }
 
 .whatsapp {
-    background-image: url(./../svgs/_social/whatsapp.svg);
+    background-image: url(/resources/svgs/_social/whatsapp.svg);
 }
 
 .whatsapp:hover, .dropdown-content a:hover .whatsapp {
-    background-image: url(./../svgs/_social/whatsappHover.svg);
+    background-image: url(/resources/svgs/_social/whatsappHover.svg);
 }
 
 .youtube {
-    background-image: url(./../svgs/_social/youtube.svg);
+    background-image: url(/resources/svgs/_social/youtube.svg);
 }
 
 .youtube:hover, .dropdown-content a:hover .youtube {
-    background-image: url(./../svgs/_social/youtubeHover.svg);
+    background-image: url(/resources/svgs/_social/youtubeHover.svg);
 }
 
 .dribble {
-    background-image: url(./../svgs/_social/dribble.svg);
+    background-image: url(/resources/svgs/_social/dribble.svg);
 }
 
 .dribble:hover, .dropdown-content a:hover .dribble {
-    background-image: url(./../svgs/_social/dribbleHover.svg);
+    background-image: url(/resources/svgs/_social/dribbleHover.svg);
 }
 
 .mail {
-    background-image: url(./../svgs/_social/mail.svg);
+    background-image: url(/resources/svgs/_social/mail.svg);
 }
 
 .mail:hover, .dropdown-content a:hover .mail {
-    background-image: url(./../svgs/_social/mailHover.svg);
+    background-image: url(/resources/svgs/_social/mailHover.svg);
 }
 
 
@@ -291,75 +293,75 @@ a {
 /* Categories */
 
 nav .videos {
-    background-image: url(./../svgs/_services/videos.svg);
+    background-image: url(/resources/svgs/_services/videos.svg);
 }
 
 nav .videos:hover, .dropdown-content a:hover .videos {
-    background-image: url(./../svgs/_services/videosHover.svg);
+    background-image: url(/resources/svgs/_services/videosHover.svg);
 }
 
 nav .animations {
-    background-image: url(./../svgs/_services/animations.svg);
+    background-image: url(/resources/svgs/_services/animations.svg);
 }
 
 nav .animations:hover, .dropdown-content a:hover .animations {
-    background-image: url(./../svgs/_services/animationsHover.svg);
+    background-image: url(/resources/svgs/_services/animationsHover.svg);
 }
 
 nav .graphicDesign {
-    background-image: url(./../svgs/_services/graphicDesign.svg);
+    background-image: url(/resources/svgs/_services/graphicDesign.svg);
 }
 
 nav .graphicDesign:hover, .dropdown-content a:hover .graphicDesign {
-    background-image: url(./../svgs/_services/graphicDesignHover.svg);
+    background-image: url(/resources/svgs/_services/graphicDesignHover.svg);
 }
 
 nav .branding {
-    background-image: url(./../svgs/_services/branding.svg);
+    background-image: url(/resources/svgs/_services/branding.svg);
 }
 
 nav .branding:hover, .dropdown-content a:hover .branding {
-    background-image: url(./../svgs/_services/brandingHover.svg);
+    background-image: url(/resources/svgs/_services/brandingHover.svg);
 }
 
 nav .logoDesign {
-    background-image: url(./../svgs/_services/logoDesign.svg);
+    background-image: url(/resources/svgs/_services/logoDesign.svg);
 }
 
 nav .logoDesign:hover, .dropdown-content a:hover .logoDesign {
-    background-image: url(./../svgs/_services/logoDesignHover.svg);
+    background-image: url(/resources/svgs/_services/logoDesignHover.svg);
 }
 
 nav .rebranding {
-    background-image: url(./../svgs/_services/rebranding.svg);
+    background-image: url(/resources/svgs/_services/rebranding.svg);
 }
 
 nav .rebranding:hover, .dropdown-content a:hover .rebranding {
-    background-image: url(./../svgs/_services/rebrandingHover.svg);
+    background-image: url(/resources/svgs/_services/rebrandingHover.svg);
 }
 
 nav .modelling {
-    background-image: url(./../svgs/_services/3dModelling.svg);
+    background-image: url(/resources/svgs/_services/3dModelling.svg);
 }
 
 nav .modelling:hover, .dropdown-content a:hover .modelling {
-    background-image: url(./../svgs/_services/3dModellingHover.svg);
+    background-image: url(/resources/svgs/_services/3dModellingHover.svg);
 }
 
 nav .visualising {
-    background-image: url(./../svgs/_services/3dVisualising.svg);
+    background-image: url(/resources/svgs/_services/3dVisualising.svg);
 }
 
 nav .visualising:hover, .dropdown-content a:hover .visualising {
-    background-image: url(./../svgs/_services/3dVisualisingHover.svg);
+    background-image: url(/resources/svgs/_services/3dVisualisingHover.svg);
 }
 
 nav .projectDesign {
-    background-image: url(./../svgs/_services/projectDesign.svg);
+    background-image: url(/resources/svgs/_services/projectDesign.svg);
 }
 
 nav .projectDesign:hover, .dropdown-content a:hover .projectDesign {
-    background-image: url(./../svgs/_services/projectDesign.svg);
+    background-image: url(/resources/svgs/_services/projectDesign.svg);
 }
 
 
