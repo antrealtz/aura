@@ -410,8 +410,8 @@ nav {
     align-items: center;
     list-style: none;
     overflow: visible;
-    background-color: #333;
     position: sticky;
+    position: -webkit-sticky; /* For Safari */
     top: 0;
     width: 100%;
     z-index: 2;
