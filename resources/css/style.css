@@ -217,7 +217,7 @@ a {
     font-weight: 700;
 }
 
-.socials {
+.social {
     height: 5rem;
     width: 5rem;
     background-repeat: no-repeat;
@@ -228,7 +228,7 @@ a {
 
 
 
-/* Socials */
+/* Social */
 
 .vk {
     background-image: url("../svgs/social/vk.svg");
@@ -468,7 +468,7 @@ nav .dropdown-content a {
     white-space: nowrap;
 }
 
-nav .socials {
+nav .social {
     width: 4rem;
     height: 4rem;
 }
@@ -902,7 +902,7 @@ footer .flex-col {
     column-gap: 1rem;
 }
 
-footer .socials {
+footer .social {
     width: 4rem;
     height: 4rem;
 }
