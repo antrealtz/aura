@@ -22,6 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Optional: Close dropdown menu on link click (from your additional script)
+    document.querySelectorAll('a[data-target]').forEach(item => {
+        item.addEventListener('click', event => {
+            // Hide the dropdown menu
+            const dropdownContent = item.closest('.dropdown-content');
+            dropdownContent.style.display = 'none';
+
+            // Optionally, you can programmatically close the dropdown
+            setTimeout(() => {
+                dropdownContent.style.display = '';
+            }, 0);
+        });
+    });
+
     // Function to handle click on animation links
     function handleAnimationClick(link) {
         const targetId = link.getAttribute('data-target');
@@ -46,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function restoreScrollPosition() {
         const savedScrollPosition = localStorage.getItem('scrollPosition');
         const savedCurrentSection = localStorage.getItem('currentSection');
-        
+
         if (savedScrollPosition !== null && savedCurrentSection !== null) {
             currentSection = parseInt(savedCurrentSection, 10);
             if (currentSection >= 0 && currentSection < sections.length) {
