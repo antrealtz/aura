@@ -424,7 +424,7 @@ header {
 
 header img {
     height: 100%;
-    width: fit-content;
+    width: max-content;
 }
 
 
@@ -954,7 +954,7 @@ footer .social {
     }
 
     header {
-        height: 24rem;
+        height: 32rem;
     }
 
     #navbar {
@@ -978,10 +978,6 @@ footer .social {
         width: 100%;
         padding: 4rem;
         height: fit-content;
-    }
-
-    .nav-menu {
-        display: none;
     }
 
     .left {
@@ -1023,4 +1019,13 @@ footer .social {
         padding: 0;
         justify-content: center;
     }
+
+    header {
+        height: 24rem;
+    }
+
+    .nav-menu .grid {
+        display: none;
+    }
+
 }
