@@ -842,6 +842,7 @@ nav .aura-contacts {
 .projectDesign .rightBottom {
     color: white;
     text-align: center;
+    display: block;
     background-image: url(./../svgs/projectDesign/projectDesignRightBottom.svg);
 }
 
