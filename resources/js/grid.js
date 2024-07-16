@@ -23,15 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Check if the device supports touch
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 
     animationContainers.forEach(container => {
-        if (isTouchDevice) {
-            // Automatically play the animation if on a touch device
-            playAnimation(container);
-        } else {
-            const iframe = container.querySelector('.animation');
+        const iframe = container.querySelector('.animation');
 
+        if (isTouchDevice) {
+            // Automatically play the animation in a loop if on a touch device
+            setInterval(() => {
+                playAnimation(container);
+            }, 3000); // Example interval of 3 seconds, adjust as needed
+        } else {
             // Play animation on hover for non-touch devices
             container.addEventListener('mouseenter', function() {
                 playAnimation(container);
@@ -40,16 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
             container.addEventListener('mouseleave', function() {
                 stopAnimation(container);
             });
-
-            container.addEventListener('click', function(event) {
-                handleClick(event, container);
-            });
-
-            window.addEventListener('message', function(event) {
-                if (event.data === 'animationComplete') {
-                    container.querySelector('.animation').style.pointerEvents = 'none';
-                }
-            });
         }
+
+        // Handle click events separately to ensure responsiveness
+        container.addEventListener('click', function(event) {
+            handleClick(event, container);
+        });
+
+        window.addEventListener('message', function(event) {
+            if (event.data === 'animationComplete') {
+                container.querySelector('.animation').style.pointerEvents = 'none';
+            }
+        });
     });
 });
