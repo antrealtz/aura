@@ -963,8 +963,11 @@ footer .social {
     }
 
     .block {
-        height: fit-content;
-        flex-wrap: wrap;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        padding-top: 6rem;
+        column-gap: 1rem;
+        background-color: white;
     }
 
     .pdng-left {
@@ -976,21 +979,13 @@ footer .social {
     }
 
     .top img {
-        width: 100%;
+        width: 60%;
         padding: 4rem;
         height: fit-content;
     }
 
-    .left {
-        display: none;
-    }
-
-    .right {
-        width: 100%;
-    }
-
     .rightUp img {
-        height: 82%;
+        height: 50%;
     }
 
     .rightBottom .content {
@@ -1029,4 +1024,19 @@ footer .social {
         display: none;
     }
 
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .rightUp {
+        align-items: end;
+    }
+
+    .rightUp img {
+        height: 70%;
+    }
 }
